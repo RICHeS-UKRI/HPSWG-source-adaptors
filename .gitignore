@@ -1,0 +1,31 @@
+cat > HPSWG-source-adaptors/.gitignore << 'EOF'
+# OS
+.DS_Store
+Thumbs.db
+
+# editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# PHP
+vendor/
+composer.lock
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+
+# data -- prevent accidental commit of source exports or outputs
+data/
+*.json
+*.csv
+*.xml
+
+# local config
+.env
+config.local.*
+EOF
